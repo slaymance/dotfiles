@@ -1,0 +1,18 @@
+# Blacklist all contents of home and .config directories
+/*
+.config/*
+
+# Whitelist .gitignore
+!.gitignore
+
+# Whitelist config files
+!.bash_profile
+!.bashrc
+!.config/
+!.config/fish/
+!.config/sway/
+!.config/termite/
+!.fonts
+!.gitconfig
+!.gtkrc-2.0
+!.icons/
