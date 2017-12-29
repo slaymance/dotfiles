@@ -52,10 +52,8 @@ if ($status eq 'Charging') {
 ## Add dynamic battery symbols at various percentages
 if ($status eq 'Discharging') {
 	
-	if ($percent < 20) {
+	if ($percent < 35) {
 		$bat_symbol = '';
-	} elsif ($percent < 40) {
-		$bat_symbol = '';
 	} elsif ($percent < 60) {
 		$bat_symbol = '';
 	} elsif ($percent < 85) {
