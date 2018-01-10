@@ -27,8 +27,8 @@ my $full_text;
 my $short_text;
 my $bat_number = $ENV{BLOCK_INSTANCE} || 0;
 
-## Set a default battery symbol
-my $bat_symbol = '';
+## Set a battery symbol
+my $bat_symbol = '';
 
 # read the first line of the "acpi" command output
 open (ACPI, "acpi -b | grep 'Battery $bat_number' |") or die;
@@ -58,6 +58,8 @@ if ($status eq 'Discharging') {
 		$bat_symbol = '';
 	} elsif ($percent < 85) {
 		$bat_symbol = '';
+	} elsif ($percent <= 100) {
+		$bat_symbol = '';
 	}
 
 	if ($percent < 5) {
