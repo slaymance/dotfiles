@@ -244,6 +244,7 @@ output eDP-1 scale 1
     assign [class="Firefox"] $workspace1
     assign [class="Atom"] $workspace3
     assign [class="Chromium"] $workspace3
+    assign [class="Code"] $workspace3
     assign [class="Slack"] $workspace4
 
 #
