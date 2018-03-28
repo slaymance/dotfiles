@@ -107,7 +107,7 @@ font pango:System San Francisco Display 13
 # Workspaces:
 #
     # workplace variables
-    set $workspace1 "1 " 
+    set $workspace1 "1 " 
     set $workspace2 "2 "
     set $workspace3 "3 "
     set $workspace4 "4 " 
@@ -241,16 +241,15 @@ output eDP-1 scale 1
 #
 # Workspace App Assignments:
 #
-    assign [class="Firefox"] $workspace1
+    assign [class="Chromium"] $workspace1
     assign [class="Atom"] $workspace3
-    assign [class="Chromium"] $workspace3
     assign [class="Code"] $workspace3
     assign [class="Slack"] $workspace4
 
 #
 # Startup Applications:
 #
-    exec firefox
+    exec chromium 
     exec slack
 
 # Pulse Audio controls
